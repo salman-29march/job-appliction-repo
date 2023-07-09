@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title and css link -->
+    <title>Job Application form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- heading set -->
+      <h1>
+        Job Application
+        <span class="title_small">(web)</span>
+      </h1>
+
+      <!-- main part of form  -->
+      <form action="">
+        <div class="form_container">
+          <!-- set first name -->
+          <div class="form_control">
+            <label for="first_name">First Name</label>
+            <input
+              id="first name"
+              name="first_name"
+              placeholder="Enter First Name..." />
+          </div>
+
+          <!-- set last name -->
+          <div class="form_control">
+            <label for="last_name">Last Name</label>
+            <input
+              id="last name"
+              class="last_name"
+              placeholder="Enter Last Name..." />
+          </div>
+
+          <!-- set email id -->
+          <div class="form_control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email name"
+              class="email"
+              placeholder="Enter Email..." />
+          </div>
+
+          <!-- job section selection -->
+          <div class="form_control">
+            <label for="job role">Job Role</label>
+            <select id="job_role" name="job_role">
+              <option value="">Select Job Role</option>
+              <option value="frontend">frontend developer</option>
+              <option value="backend">Backend developer</option>
+              <option value="full_stack">Full Stack developer</option>
+              <option value="ui_ux">UI UX Designer</option>
+            </select>
+          </div>
+
+          <!-- text area means comment box -->
+          <div class="textarea_control">
+            <label for="address"> Address</label>
+            <textarea
+              name="address"
+              id="adress"
+              cols="30"
+              rows="4"
+              placeholder="Enter Address...">
+            </textarea>
+          </div>
+
+          <!--set town-->
+          <div class="form_control">
+            <label for="city">City</label>
+            <input id="city" name="city" placeholder="Enter city name..." />
+          </div>
+
+          <!-- set pin_code -->
+          <div class="form_control">
+            <label for="pincode">Pin Code</label>
+            <input
+              type="number"
+              name="pin_code"
+              id="pin_code"
+              placeholder="Enter Pin Code..." />
+          </div>
+
+          <!-- set date -->
+          <div class="form_control">
+            <label for="date">Date</label>
+            <input type="date" value="01/01.2023" id="date" />
+          </div>
+          <!-- set cv file -->
+          <div class="form_control">
+            <label for="Upload">Upload Cv file</label>
+            <input type="file" name="upload" id="upload" />
+          </div>
+          <!-- set submit button -->
+          <div class="button_container">
+            <button type="submit">Apply Now</button>
+          </div>
+          <!-- </div>
+        <div class="button_container">
+          <button type="submit">Apply Now</button>
+        </div> -->
+
+          <!-- set reset button -->
+          <div class="button_container">
+            <button type="reset">Clear All</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
